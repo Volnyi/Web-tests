@@ -33,7 +33,6 @@ class Page:
             return element
 
     def search_elements(self, *locator):
-        """Метод поиска нескольких элементов, возвращает list"""
         element_wait = self.wait_element(*locator)
         if element_wait:
             elements = self.driver.find_elements(*locator)

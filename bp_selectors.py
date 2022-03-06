@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class BaseLocators:
-    """Класс со всеми перекликающимися локаторами на всех сайтах"""
+    """Class with universal locators"""
     MAIN_HEADER_PROFILE = (By.XPATH, '//*[@id="login-menu"]')
     MAIN_HEADER_ENTER = (By.XPATH, '//*[@id="navbarText"]/ul[2]/li[2]/div/div[1]/a')
     MAIN_COOCKIE_CLOSE = (By.XPATH, '//*[@id="alert-portal_use_cookie"]/div/div/div/a[1]')
@@ -12,5 +12,5 @@ class BaseLocators:
 
 
 class ProdactionLocators(BaseLocators):
-    """Класс с локаторами продакшен площадок"""
+    """Class with prod locators"""
     pass

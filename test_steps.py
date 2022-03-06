@@ -1,13 +1,12 @@
 import pytest
 from time import sleep
 from data import *
-# Для запуска перейти в директорию с тестами и ввести в командную строку: pytest -m for_all test_steps.py --browser firefox --project 1c_prod
 
 
 class TestAuth:
     @pytest.mark.for_all
     def test_login(self, driver_and_project):
-        """Корректная авторизация"""
+        """Correct auth"""
         driver_and_project[0].open_page(driver_and_project[1])
         sleep(3)
         driver_and_project[0].find_and_click_close_coockies()
